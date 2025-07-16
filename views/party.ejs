@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/videojs/video-js.css" rel="stylesheet" />
+
+</head>
+<body>
+    <h1>Start Watching with your friends..</h1>
+    <h2>Select a video to start watching</h2>
+
+
+<input type="file" id="fileInput" accept="video/*">
+
+
+
+    <video
+    id="my-player"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="360"
+    poster=""
+    data-setup='{}'>
+    <source id="videoSource"></source>
+  <!-- <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
+  <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm"></source>
+  <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"></source> -->
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a
+    web browser that
+    <a href="https://videojs.com/html5-video-support/" target="_blank">
+      supports HTML5 video
+    </a>
+  </p>
+</video>
+<script> const roomId ="<%= roomId %>" </script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/videojs/video.min.js"></script>
+<script src="/js/party.js"></script>
+
+</body>
+</html>
