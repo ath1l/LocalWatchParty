@@ -93,3 +93,9 @@ fileInput.addEventListener('change', (e) => {
     }
 });
 
+document.getElementById("copyBtn").addEventListener("click", () => {
+      const input = document.getElementById("roomCodeInput");
+      input.select();
+      input.setSelectionRange(0, 99999); 
+      navigator.clipboard.writeText(input.value);
+    });

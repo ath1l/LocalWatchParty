@@ -4,7 +4,6 @@ const path = require('path');
 const { Server } = require('socket.io');
 const rooms = {};
 
-
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','ejs');
 app.use(express.urlencoded({extended:true}));
@@ -82,9 +81,7 @@ io.on('connection',socket=>{
         
     })
     
-})
-
-        
+})      
 
 function genRoomId(length = 6) {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
